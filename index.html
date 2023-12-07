@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Salingoran's Website" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {	*// This is for the style of the body.
+	  background-color: #383838 ;
+	  background-image:url('tulips.gif');
+	  background-size: cover;
+	  background-repeat: no-repeat;
+    }
+	h4 {	*// This is for the style of the h4.
+	  display: flex;
+	  text-align: left-side;
+	  font-family: Times New Roman;
+	  color: white;
+	  background-color: black;
+	  display: inline;
+	  font-size: 5mm;
+	  margin-right: 30px;
+	  margin-left: 30px;
+	  margin-bottom: 10px;
+	  margin-top: 10px;
+	  padding: 20px;
+	  }
+	  
+	h3 {	*// This is for the style of the h3.	
+	  display: flex;
+	  text-align: left-side;
+	  font-family: Times New Roman;
+	  color: white;
+	  background-color: black;
+	  display: inline;
+	  font-size: 5mm;
+	  margin-right: 30px;
+	  margin-left: 30px;
+	  padding: 20px;
+	  }
+	  
+	p{	*// This is for the style of the paragraph element.
+	  color: black  ;
+      font-size: 5mm;
+	  font-weight: 9mm;	
+	  margin-right: 30px;
+	  margin-left: 30px;
+	  padding: 20px;
+	  background-color: #C1DA85 ;
+	  
+	  }
+	  
+	ul{	*// This is for the style of the unordered list element.
+	color:black;
+	background-color: #C1DA85;
+	font-size: 5mm;
+	margin-right: 30px;
+	margin-left: 30px;
+	padding: 25px;
+	}
+	
+	footer {	*// This is for the style of the footer.
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+	
+	.rounded-image {
+	  max-width: 20%; 
+      margin-right: 50px;
+	  margin-left:50px;
+	  border-radius: 100%;
+	  border: 5px #C1DA85 ;
+	  display: block;
+	  margin: 0 auto;
+		}
+		
+	.scrolling-container {
+      overflow: hidden;
+      white-space: nowrap;
+    }
+
+    .scrolling-images {
+      display: inline-block;
+      animation: scrollImages 10s linear infinite;
+    }
+
+    @keyframes scrollImages {
+      0% {
+        transform: translateX(100%);
+      }
+      100% {
+        transform: translateX(-100%);
+      }
+    }
+
+	
+	.flex-image {
+	  max-width: 100%; 
+      margin-right: 50px;
+	  margin-left:50px;
+	  border-radius: 100%;
+	  border: 3px solid #C1DA85 ;
+	   width: 250px; 
+      animation: moveRight 12s linear infinite; *//movement of images
+    }
+	  
+		}
+		
+    .tab-container {
+      width: 60%;
+      margin: 50px auto;
+    }
+
+    .tab {
+      display: inline-block;
+      padding: 10px 20px;
+      cursor: pointer;
+      background-color: #A4B579  ;
+      border: 1px solid white;
+      border-radius: 5px 5px 0 0;
+      margin-right: 5px;
+    }
+
+    .tab:hover {
+      background-color: white;
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 0 0 5px 5px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="tab-container">
+  <div class="tab" onclick="openTab('tab1')">Homepage</div>
+  <div class="tab" onclick="openTab('tab2')">ITIII Blog</div>
+  <div class="tab" onclick="openTab('tab3')">Flex Page</div>
+
+  <div id="tab1" class="tabcontent">
+	<img src="eheh.jpg" alt="Chinn Demple" class="rounded-image">
+	<h4> Self-Introduction: </h4>
+	<ul>
+    <li> Name: Salingoran, Chinn Demple S.</li>
+	<li> Age: 19 </li>
+	<li>Birthdate: November 10, 2004</li>
+	<li>Hobbies: Listening to music, taking a nap & eating hotdog bun</li>
+	</ul>
+	<h4> Social Media Pages: </h4>
+	<hr>
+ 	<button class="button" onclick="window.location.href='https://www.facebook.com/chinndemplesltnslngrn?mibextid=ZbWKwL';"> <img src="fb.png" alt="Facebook" style="height:30px;" class="circular-image"> </button>
+	<button class="button" onclick="window.location.href='https://www.instagram.com/dmple_chinn/';"><img src="ig.jpg" alt="Instagram" style="height:30px;" class="circular-image"> </button>
+	<button class="button" onclick="window.location.href='https://www.youtube.com/channel/UC2DR-AixXF41_FKdUJOOFVg';"> <img src="yt.jpg" alt="Youtube" style="height:30px;" class="circular-image"> </button>
+	<hr>
+	<h4> Me 8 years from now: </h4>
+	<p> 8 years from now, I see myself tasked with safeguarding sensitive information, protecting digital assets, and fortifying the defenses of organizations
+	against cyber threats. I see myself gaining the skills that a security analyst have which includes the ability to decipher the cryptic languages
+	of malicious actors. Much like deciphering a dream's symbolism, security analysts analyze patterns, anomalies, and vulnerabilities within a network to uncover 
+	potential threats. This skill requires a unique blend of technical expertise, critical thinking, and intuition, allowing analysts to interpret the digital landscape 
+	and identify potential risks before they materialize into cyber nightmares.
+	</p>
+	<<video width="640" height="360" controls>
+    <source src="security.mp4" type="video/mp4">
+</video>
+
+<footer>
+	2023 | Demple's Website | 
+</footer>
+
+  </div>
+
+  <div id="tab2" class="tabcontent">
+    <h3>ITIII Blog Entries</h3>
+    <p>This page contains what I have learned in the subject Introduction to Computing.</p>
+	<h4> Output/Learnings every lesson: </h4>
+	<p> In the first lesson, "What is Computing”, I learned the use of computers to solve problems or complete tasks. 
+	It can be as simple as using a calculator to add two numbers, or as complex as developing a new algorithm for machine learning. 
+	In the simplest terms, computing is about using machines to process information.  
+	I gained knowledge of the different eras of technology. The second lesson helped me to have an idea of what professions and careers should I choose in the future.  
+	The third lesson taught me the differences between data and information, how the data is processed, and the four phases of data to cycle information, and the four components of
+	a computer. Furthermore, I learned the basic concept of computer security and explored the famous cybercrime cases. 
+	Lastly, I learned how the html codes work and what are their functions and also, I enjoyed doing my website. </p>
+	<h4> Highlight of my favorite lesson: </h4>
+	<p> So far, I mostly liked the lesson in HTML & CSS since I have the capabilities to make my own website. 
+	Explore new codes and to making my day productive since I am learning everytime I'm making my website. </p>
+	<h4> Here are the highlights of the HTML & CSS: </h4>
+	<ul>
+    <li> The standard markup language for creating Web pages.</li>
+	<li> HTML tags label pieces of content such as "heading", "paragraph", "table", and so on </li>
+	<li>Browsers do not display the HTML tags, but use them to render the content of the page</li>
+	<li>Simple design language that describes the style of an HTML
+document. Through CSS, each element in the HTML document can be
+modified according to its color, size, backgrounds, layout, etc. CSS
+saves a lot of work. It can control the layout of multiple web pages all
+at once. External stylesheets are stored in CSS files. </li>
+	</ul>
+	
+	
+	
+<footer>
+	2023 | Demple's Website | 
+</footer>
+
+  </div>
+
+  <div id="tab3" class="tabcontent">
+    <h3>Flex Page</h3>
+	<p> Flexing our photos might also change our perspective. It promotes a healthy and affirming relationship between our bodies and our identities. 
+	We support a narrative of self-acceptance when we choose and share
+	photos that accentuate our positive traits and distinctive characteristics. This habit develops into a kind of self-love that penetrates our everyday
+	lives and transcends the virtual world, changing the way we view
+	ourselves and other people. Flexing our photos can boost our confidence, can motivate, and can make personal empowerment. </p>
+	
+	<h3> Here are some photos of me:</h3>
+
+	<div class="scrolling-container">
+  <div class="scrolling-images">
+	<img src="1.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="2.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="3.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="4.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="5.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="6.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="7.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="8.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="9.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="10.jpg" alt="Chinn Demple" class="flex-image">
+	</div>
+	<div>
+	<h3> and some photos that I am proud of: </h3>
+	<p> Being with people you love is the greatest source of happiness and contentment. A distinct sense of pride is influenced by the comforting relationships of </p>
+	<p> family, 
+	the understanding of those we care about, and the support of friends. This pride comes from the deep connections that make up the foundation of 
+	<p> our lives, not from our individual accomplishments. </p>
+	<div class="scrolling-container">
+  <div class="scrolling-images">
+	<img src="32.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="23.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="36.JPEG" alt="Chinn Demple" class="flex-image">
+	<img src="35.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="20.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="21.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="24.jpg" alt="Chinn Demple" class="flex-image">
+	<img src="31.jpg" alt="Chinn Demple" class="flex-image">
+
+  </div>
+  		
+<footer>
+	2023 | Demple's Website | 
+</footer>
+
+</div>
+
+</body>
+
+<script>
+  function openTab(tabName) {
+    var i, tabcontent, tab;
+
+    // Hide all tab content
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // Remove the "active" class from all tabs
+    tab = document.getElementsByClassName("tab");
+    for (i = 0; i < tab.length; i++) {
+      tab[i].className = tab[i].className.replace(" active", "");
+    }
+
+    // Show the specific tab content
+    document.getElementById(tabName).style.display = "block";
+
+    // Add the "active" class to the button that opened the tab
+    event.currentTarget.className += " active";
+  }
+</script>
+
+</body>
+</html>
